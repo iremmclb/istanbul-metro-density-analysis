@@ -8,3 +8,6 @@ WHERE LineId LIKE '34%'; -- all LineId of metrobus data start with 34.
 
 DELETE FROM transferLine 
 WHERE Id = 97; -- Id = 97 is a teleferic line 
+
+DELETE FROM stations 
+WHERE LineName LIKE 'TF%'; -- teleferic lines 
