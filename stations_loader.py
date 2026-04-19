@@ -1,6 +1,13 @@
 import sqlite3
 
-raw_data = """4,M1,ULUBATLI,FATİH,1738,2,4
+def load_all_rail_systems():
+    conn = sqlite3.connect('metrodensity.db')
+    cursor = conn.cursor()
+
+    raw_data = """1,M1,YENİKAPI,FATİH,2500,8,2
+2,M1,AKSARAY,FATİH,670,4,1
+3,M1,EMNİYET,FATİH,1816,2,4
+4,M1,ULUBATLI,FATİH,1738,2,4
 5,M1,BAYRAMPAŞA,BAYRAMPAŞA,1157,2,3
 6,M1,SAĞMACILAR,BAYRAMPAŞA,1157,1,2
 7,M1,KOCATEPE,BAYRAMPAŞA,745,2,1
@@ -86,6 +93,75 @@ raw_data = """4,M1,ULUBATLI,FATİH,1738,2,4
 87,M6,ETİLER,BEŞİKTAŞ,6750,1,3
 88,M6,NİSPETİYE,BEŞİKTAŞ,5765,4,5
 89,M6,HİSARÜSTÜ - BOĞAZİÇİ ÜNİVERSİTESİ,BEŞİKTAŞ,6915,3,3
+90,F1,KABATAŞ,BEYOĞLU,0,2,2
+91,F1,TAKSİM,BEYOĞLU,0,0,1
+92,T1,KABATAŞ,BEYOĞLU,738,0,0
+93,T1,FINDIKLI,BEYOĞLU,188,0,0
+94,T1,TOPHANE,BEYOĞLU,185,0,0
+95,T1,KARAKÖY,BEYOĞLU,409,0,0
+96,T1,EMİNÖNÜ,FATİH,941,0,0
+97,T1,SİRKECİ,FATİH,424,0,0
+98,T1,GÜLHANE,FATİH,228,0,0
+99,T1,SULTANAHMET,FATİH,330,0,0
+100,T1,ÇEMBERLİTAŞ,FATİH,355,0,0
+101,T1,BEYAZIT,FATİH,786,0,0
+102,T1,LALELİ,FATİH,297,0,0
+103,T1,AKSARAY,FATİH,452,0,0
+104,T1,YUSUFPAŞA,FATİH,577,0,0
+105,T1,HASEKİ,FATİH,340,0,0
+106,T1,FINDIKZADE,FATİH,330,0,0
+107,T1,ÇAPA,FATİH,717,0,0
+108,T1,PAZARTEKKE,FATİH,371,0,0
+109,T1,TOPKAPI,ZEYTİNBURNU,270,0,1
+110,T1,CEVİZLİBAĞ,ZEYTİNBURNU,751,0,0
+111,T1,MERKEZEFENDİ,ZEYTİNBURNU,338,0,0
+112,T1,AKŞEMSETTİN,ZEYTİNBURNU,328,0,0
+113,T1,MİTHATPAŞA,ZEYTİNBURNU,413,0,0
+114,T1,ZEYTİNBURNU,BAKIRKÖY,454,0,0
+115,T1,MEHMETAKİF,GÜNGÖREN/BAHÇELİEVLER,173,0,0
+116,T1,MERTER/ Tekstil Merkezi /Keresteciler,GÜNGÖREN/BAHÇELİEVLER,346,0,0
+117,T1,GÜNGÖREN,GÜNGÖREN,516,0,0
+118,T1,AKINCILAR,GÜNGÖREN,211,0,0
+119,T1,SOĞANLI,GÜNGÖREN,216,0,0
+120,T1,YAVUZSELİM / Cami,GÜNGÖREN,209,0,0
+121,T1,GÜNEŞTEPE,GÜNGÖREN,289,0,0
+122,T1,BAĞCILAR,BAĞCILAR,517,0,0
+123,T4,TOPKAPI,ZEYTİNBURNU,950,0,0
+124,T4,FETİHKAPI,FATİH,564,0,0
+125,T4,VATAN,EYÜPSULTAN,1057,4,2
+126,T4,EDİRNEKAPI,EYÜPSULTAN,2304,4,4
+127,T4,ŞEHİTLİK,EYÜPSULTAN,505,0,0
+128,T4,DEMİRKAPI,EYÜPSULTAN,505,0,0
+129,T4,TOPÇULAR,EYÜPSULTAN,1680,2,1
+130,T4,RAMİ,BAYRAMPAŞA,1680,2,1
+131,T4,ULUYOL BEREÇ,BAYRAMPAŞA,1680,2,1
+132,T4,SAĞMALCILAR,BAYRAMPAŞA,505,0,0
+133,T4,BOSNA ÇUKURÇEŞME,BAYRAMPAŞA,505,0,0
+134,T4,ALİ FUAT BAŞGİL,BAYRAMPAŞA,1680,2,1
+135,T4,TAŞKÖPRÜ,BAYRAMPAŞA,1680,2,1
+136,T4,KARADENİZ,BAYRAMPAŞA,1680,2,1
+137,T4,METRİS,GAZİOSMANPAŞA,800,0,0
+138,T4,CUMHURİYET MAHALLESİ,SULTANGAZİ,960,0,0
+139,T4,50. YIL BAŞTABYA,SULTANGAZİ,505,0,0
+140,T4,HACIŞÜKRÜ,SULTANGAZİ,960,0,0
+141,T4,YENİMAHALLE,SULTANGAZİ,960,0,0
+142,T4,SULTANÇİFTLİĞİ,SULTANGAZİ,960,0,0
+143,T4,CEBECİ,SULTANGAZİ,960,0,0
+144,T4,MESCİD-İ SELAM,SULTANGAZİ,505,0,0
+145,T3,İDO -İSKELE,KADIKÖY,0,0,0
+146,T3,CAMİİ,KADIKÖY,0,0,0
+147,T3,ÇARŞI,KADIKÖY,0,0,0
+148,T3,ALTIYOL,KADIKÖY,0,0,0
+149,T3,BAHARİYE,KADIKÖY,0,0,0
+150,T3,KİLİSE,KADIKÖY,0,0,0
+151,T3,MODA İLKOKULU,KADIKÖY,0,0,0
+152,T3,MODA CADDESİ,KADIKÖY,0,0,0
+153,T3,MÜHÜRDAR,KADIKÖY,0,0,0
+154,T3,DAMGA SOKAK,KADIKÖY,0,0,0
+155,TF1,EYÜP ,EYÜP,0,0,1
+156,TF1,PİYERLOTİ,EYÜP,0,2,1
+157,TF2,MAÇKA,ŞİŞLİ,0,0,0
+158,TF2,TAŞKIŞLA,ŞİŞLİ,0,0,0
 159,M7,KABATAŞ ,BEYOĞLU,15993,15,6
 160,M7,BEŞİKTAŞ,BEŞİKTAŞ,10429,10,8
 161,M7,YILDIZ,BEŞİKTAŞ,16542,20,10
@@ -106,30 +182,43 @@ raw_data = """4,M1,ULUBATLI,FATİH,1738,2,4
 176,M7,GÖZTEPE,BAĞCILAR,10636,14,4
 177,M7,MAHMUTBEY,BAĞCILAR,13851,19,2"""
 
-def load_stations():
-    conn = sqlite3.connect('metrodensity.db')
-    cursor = conn.cursor()
-    
+    cursor.execute("DELETE FROM stations")
+    cursor.execute("DELETE FROM Line_Stations")
+
+    station_records = []
+    line_station_records = []
+    current_line = ""
+    order_counter = 1
+
     for line in raw_data.strip().split('\n'):
-        parts = line.split(',')
+        p = line.split(',')
         try:
-            s_id = int(parts[0])
-            line_name = parts[1]
-            station_name = parts[2]
-            district = parts[3]
-            size = int(float(parts[4]))
-            escalator = int(parts[5])
-            elevator = int(parts[6])
+            s_id = int(p[0])
+            l_name = p[1]
+            s_name = p[2]
+            dist = p[3]
+            size = int(float(p[4]))
+            esc = int(p[5])
+            elev = int(p[6])
             
-            cursor.execute("""
-                INSERT OR IGNORE INTO stations (Id, LineName, StationName, DistirctName, StationSize, Escalator_Cnt, Elevator_Cnt)
-                VALUES (?, ?, ?, ?, ?, ?, ?)
-            """, (s_id, line_name, station_name, district, size, escalator, elevator))
-        except:
+            station_records.append((s_id, l_name, s_name, dist, size, esc, elev))
+            
+            if l_name != current_line:
+                current_line = l_name
+                order_counter = 1
+            else:
+                order_counter += 1
+            
+            line_station_records.append((l_name, s_id, order_counter))
+            
+        except (ValueError, IndexError):
             continue
+
+    cursor.executemany("INSERT INTO stations VALUES (?,?,?,?,?,?,?)", station_records)
+    cursor.executemany("INSERT INTO Line_Stations (LineId, StationId, StationOrder) VALUES (?,?,?)", line_station_records)
 
     conn.commit()
     conn.close()
 
 if __name__ == "__main__":
-    load_stations()
+    load_all_rail_systems()
