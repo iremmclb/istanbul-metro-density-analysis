@@ -11,8 +11,8 @@ The primary purpose of IMDAS is to transform raw public transport data into acti
 
 ## Group Number : 9
 ## Group Members
-İrem Çelebi - 21058004
-Esma Nur Kibar - 21058014
-Furkan Gültekin - 21058027
-Nazlıcan Boz - 22052083
+İrem Çelebi - 21058004  
+Esma Nur Kibar - 21058014  
+Furkan Gültekin - 21058027  
+Nazlıcan Boz - 22052083  
 Mehmet Emin Hatipoğlu - 23052030
