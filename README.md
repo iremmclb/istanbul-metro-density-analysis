@@ -8,3 +8,11 @@ The primary purpose of IMDAS is to transform raw public transport data into acti
 2. **Impact Analysis:** Analyzing how official holidays and religious festivals affect public transit behavior compared to regular workdays.
 3. **Smart Mobility Integration:** Providing a data foundation to suggest alternative micro-mobility solutions (like scooters or bike-sharing) for short-distance trips when metro density reaches critical thresholds.
 4. **Data-Driven Decision Making:** Creating a scalable SQL infrastructure that can help in predicting future transit trends.
+
+## Group Number : 9
+## Group Members
+İrem Çelebi
+Esma Nur Kibar
+Furkan Gültekin
+Nazlıcan Boz
+Mehmet Emin Hatipoğlu
