@@ -11,8 +11,6 @@ def fill_thresholds():
 
     for station in stations:
         s_id = station[0]
-
-        
         thresholds_data.append((s_id, 1500, 'Low'))
         thresholds_data.append((s_id, 4000, 'Medium'))
         thresholds_data.append((s_id, 10000, 'High'))
@@ -24,7 +22,6 @@ def fill_thresholds():
     )
 
     conn.commit()
-    print(f"{len(thresholds_data)} tane eşik değeri tanımlandı")
     conn.close()
 
 if __name__ == "__main__":
