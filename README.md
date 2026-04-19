@@ -1,18 +1,34 @@
-# Istanbul Metro Density Analysis System (IMDAS)
-The core idea of this project is to build a relational database system that processes large-scale hourly transit data to visualize and analyze the passenger load of Istanbul's metro network. By integrating historical density patterns with external factors like public holidays, the system provides a comprehensive "density map" for urban planning and commuter awareness.
-
+# YTU IMDAS Project Group 9
+## Project Overview - Istanbul Metro Density Analysis System (IMDAS)
+IMDAS is a relational database project developed for the Applied SQL course. The core idea of this project is to build a relational database system that processes large-scale hourly transit data to visualize and analyze the passenger load of Istanbul's metro network. By integrating historical density patterns with external factors like public holidays, the system provides a comprehensive "density map" for urban planning and commuter awareness.
 ## Purpose & Objectives
 The primary purpose of IMDAS is to transform raw public transport data into actionable transit intelligence. Our specific objectives are:
-
 1. **Traffic Load Balancing:** Identifying peak hours and bottleneck stations to understand where the metro system is over-capacity.
 2. **Impact Analysis:** Analyzing how official holidays and religious festivals affect public transit behavior compared to regular workdays.
 3. **Smart Mobility Integration:** Providing a data foundation to suggest alternative micro-mobility solutions (like scooters or bike-sharing) for short-distance trips when metro density reaches critical thresholds.
 4. **Data-Driven Decision Making:** Creating a scalable SQL infrastructure that can help in predicting future transit trends.
-
-## Group Number : 9
+## Database & Data Source
+**Database:** SQLite
+**Data Source:** https://data.ibb.gov.tr/dataset/hourly-public-transport-data-set
 ## Group Members
 İrem Çelebi - 21058004  
 Esma Nur Kibar - 21058014  
 Furkan Gültekin - 21058027  
 Nazlıcan Boz - 22052083  
 Mehmet Emin Hatipoğlu - 23052030
+## Sample Queries
+1. **Top 5 highest connectivity transit hubs**
+```sql
+SELECT t.LineName, t.From_where, COUNT(t.to_where) transfer_cnt 
+FROM transferLine t  
+GROUP BY t.From_where, t.LineName 
+ORDER BY transfer_cnt DESC 
+LIMIT 5;
+```
+2. **Average passenger volume by day type**
+```sql
+SELECT c.IsWorkDay, AVG(p.PassengerCount) AS AvgVolume
+FROM passenger_flow p
+JOIN Calendar c ON p.TransitionDate = c.Date
+GROUP BY c.IsWorkDay;
+```
