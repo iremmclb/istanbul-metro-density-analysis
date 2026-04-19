@@ -10,4 +10,4 @@ DELETE FROM transferLine
 WHERE Id = 97; -- Id = 97 is a teleferic line 
 
 DELETE FROM stations 
-WHERE LineName LIKE 'TF%'; -- teleferic lines 
+WHERE LineName LIKE 'TF%'; -- teleferic lines
