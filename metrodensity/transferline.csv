@@ -1,0 +1,98 @@
+﻿Id,LineName,From_where ,To_where
+1,F1,F1 Kabataş,T1 Kabataş
+2,F1,F1 Kabataş,Şehir Hatları- Deniz Otobüsleri-Gezi Tekneleri
+3,F1,F1 Taksim,M2 Taksim
+4,F1,F1 Taksim,Nostaljik Tramvay
+5,M1,M1A Ataköy-Şirinevler  ,Şirinevler Metrobüs
+6,M1,M1A Bahçelievler  ,Bahçelievler Metrobüs
+7,M1,M1A Zeytinburnu  ,Zeytinburnu Metrobüs
+8,M1,M1A Zeytinburnu ,T1 Zeytinburnu
+9,M1,M1B Bağcılar Meydan ,T1 Bağcılar
+10,M1,M1B Kirazlı  ,M3 Kirazlı
+11,M1,M1A Topkapı-Ulubatlı  ,T4 Vatan
+12,M1,M1A Aksaray  ,T1 Yusufpaşa
+13,M1,M1A Yenibosna,Yenibosna Metrobüs
+14,M1,M1A Yenibosna,M9 Yenibosna
+15,M1,M1A Merter,Merter Metrobüs
+16,M1,M1A Bakırköy,Bakırköy Metrobüs
+17,M1,M1A Bakırköy,M3 Bakırköy
+18,M1,M1Yenikapı ,Marmaray Yenikapı
+19,M1,M1Yenikapı ,T6 Yenikapı
+20,M1,M1Yenikapı ,M2 Yenikapı
+21,M1,M1A Aksaray,T1 Aksaray - Yusufpaşa
+22,M2,M2 Yenikapı  ,Marmaray Yenikapı
+23,M2,M2 Yenikapı  ,M1 Yenikapı
+24,M2,M2 Yenikapı  ,T6 Yenikapı
+25,M2,M2 Vezneciler  ,T1 Laleli
+26,M2,M2 Haliç,T5 Küçükpazar
+27,M2,M2 Şişhane  ,Nostaljik Tramvay
+28,M2,M2 Şişhane  ,Tarihi Tünel
+29,M2,M2 Taksim  ,F1 Taksim
+30,M2,M2 Taksim  ,Nostaljik Tramvay
+31,M2,M2 Şişli-Mecidiyeköy  ,Mecidiyeköy Metrobüs
+32,M2,M2 Şişli-Mecidiyeköy  ,M7 Mecidiyeköy
+33,M2,M2 Gayrettepe  ,Zincirlikuyu Metrobüs
+34,M2,M2 Gayrettepe  ,M11 Gayrettepe
+35,M2,M2 Levent,M6 Levent
+36,M2,M2 Sanayi Mah.  ,M2 Sanayi Mah. Seyrantepe Peronu
+37,M2,M2 Seyrantepe,F3 Vadi İstanbul
+38,M3,M3 Kirazlı,M1B Kirazlı Aktarması
+39,M3,M3 Mahmutbey,M7 Mahmutbey
+40,M3,M3 İkitelli Sanayi  ,M9 İkitelli Sanayi
+41,M3,M3 İncirli,M1 Bakırköy
+42,M3,M3 İncirli,Bakırköy Metrobüs
+43,M3,M3 Özgürlük Meydanı,Marmaray Bakırköy-YHT
+44,M3,M3 Bakırköy Sahil,Deniz Otobüsleri-Gezi Tekneleri
+45,M4,M4 Kadıköy  ,T3 Kadıköy
+46,M4,M4 Kadıköy  ,Şehir Hatları- Deniz Otobüsleri-Gezi Tekneleri
+47,M4,M4 Ayrılık Çeşmesi  ,Marmaray Ayrılık Çeşmesi
+48,M4,M4 Kozyatağı,M8 Kozyatağı
+49,M4,M4 Ünalan  ,Uzunçayır Metrobüs
+50,M5,M5 Üsküdar  ,Marmaray Üsküdar
+51,M5,M5 Üsküdar  ,Şehir Hatları- Deniz Otobüsleri-Gezi Tekneleri
+52,M5,M5 Altunizade  ,Altunizade Metrobus
+53,M5,M5 Dudullu,M8 Dudullu
+54,M6,M6 Levent,M2 Levent
+55,M6,M6 Boğaziçi Ü./Hisarüstü,F4 Boğaziçi Ü./Hisarüstü
+56,F4,F4 Aşiyan,Şehirhatları / Anadolu Hisarı / Küçüksu
+57,F4,F4 Boğaziçi Ü./Hisarüstü,M6 Boğaziçi Ü./Hisarüstü
+58,M7,M7 Mecidiyeköy,M2 Mecidiyeköy
+59,M7,M7 Mecidiyeköy,Mecidiyeköy Metrobüs
+60,M7,M7 Alibeyköy,T5 Alibeyköy
+61,M7,M7 Kağıthane,M11 Kağıthane
+62,M7,M7 Karadeniz Mah.,T4 Kiptaş Venezia
+63,M7,M7 Mahmutbey,M3 Mahmutbey
+64,M8,M8 Bostancı,Marmaray Bostancı-YHT
+65,M8,M8 Kozyatağı,M4 Kozyatağı
+66,M8,M8 Dudullu,M5 Dudullu
+67,M9,M9 İkitelli Sanayi,M3 İkitelli Sanayi  
+68,M9,M9 Yenibosna,M1 Yenibosna
+69,M9,M9 Yenibosna,Yenibosna Metrobüs
+70,M9,M9 Ataköy,Marmaray Ataköy
+71,T1,T1 Zeytinburnu  ,Zeytinburnu Metrobüs
+72,T1,T1 Cevizlibağ-AÖY  ,Cevizlibağ Metrobüs
+73,T1,T1 Topkapı  ,T4 Topkapı
+74,T1,T1 Topkapı  ,Topkapı Metrobüs
+75,T1,T1 Sirkeci  ,Sirkeci Marmaray
+76,T1,T1 Sirkeci  ,T6 Sirkeci
+77,T1,T1 Eminönü  ,Şehir Hatları- Deniz Otobüsleri-Gezi Tekneleri
+78,T1,T1 Eminönü  ,T5 Eminönü
+79,T1,T1 Karaköy  ,Tarihi Tünel
+80,T1,T1 Kabataş  ,F1 Kabataş
+81,T1,T1 Kabataş  ,Şehir Hatları- Deniz Otobüsleri-Gezi Tekneleri
+82,T1,T1 Laleli,M2 Vezneciler
+83,T1,T1 Yusufpaşa,M1A Aksaray
+84,T1,T1 Zeytinburnu  ,M1A Zeytinburnu
+85,T1,T1 Bağcılar,M1B Bağcılar
+86,T3,T3 Kadıköy,M4 Kadıköy  
+87,T4,T4 Şehitlik   ,Edirnekapı Metrobüs
+88,T4,T4 Kiptaş Venezia,M7 Karadeniz Mah.
+89,T4,T4 Topkapı,M1A Topkapı - Ulubatlı
+90,T4,T4 Topkapı,Metrobüs Topkapı
+91,T4,T4 Topkapı,T1 Topkapı
+92,T5,T5 Alibeyköy,M7 Alibeyköy
+93,T5,T5 Eyüpsultan Teleferik,TF2 Eyüp
+94,T5,T5 Küçükpazar,M2 Haliç
+95,T5,T5 Eminönü,T1 Eminönü
+96,T5,T5 Eminönü,Şehir Hatları- Deniz Otobüsleri-Gezi Tekneleri
+97,TF2,TF2 Eyüp,T5 Eyüp
