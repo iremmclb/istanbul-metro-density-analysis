@@ -1,6 +1,6 @@
 import sqlite3
-import pandas as pd
 from datetime import date, timedelta
+
 
 def fill_calendar():
     conn = sqlite3.connect('metrodensity.db')
@@ -8,7 +8,14 @@ def fill_calendar():
 
     start_date = date(2024, 8, 1)
     end_date = date(2025, 8, 31)
-    
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS Calendar (
+            Date TEXT PRIMARY KEY,
+            DayName TEXT,
+            IsWorkDay INTEGER,
+            IsSpecialEvent INTEGER
+        )
+    """)
     current_date = start_date
     calendar_data = []
 
