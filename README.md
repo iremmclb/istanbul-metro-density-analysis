@@ -1,4 +1,12 @@
 # YTU IMDAS Project Group 9
+## Group Members
+İrem Çelebi - 21058004  
+Esma Nur Kibar - 21058014  
+Furkan Gültekin - 21058027  
+Nazlıcan Boz - 22052083  
+Mehmet Emin Hatipoğlu - 23052030
+## Project Presentation
+https://drive.google.com/file/d/1V-ipxb3cI8ihypvA_BmlmHoptqMIUjTP/view?usp=sharing
 ## Project Overview - Istanbul Metro Density Analysis System (IMDAS)
 IMDAS is a relational database project developed for the Applied SQL course. The core idea of this project is to build a relational database system that processes large-scale hourly transit data to visualize and analyze the passenger load of Istanbul's metro network. By integrating historical density patterns with external factors like public holidays, the system provides a comprehensive "density map" for urban planning and commuter awareness.
 ## Purpose & Objectives
@@ -10,12 +18,6 @@ The primary purpose of IMDAS is to transform raw public transport data into acti
 ## Database & Data Source
 **Database:** SQLite
 **Data Source:** https://data.ibb.gov.tr/dataset/hourly-public-transport-data-set
-## Group Members
-İrem Çelebi - 21058004  
-Esma Nur Kibar - 21058014  
-Furkan Gültekin - 21058027  
-Nazlıcan Boz - 22052083  
-Mehmet Emin Hatipoğlu - 23052030
 ## Sample Queries
 1. **Top 5 highest connectivity transit hubs**
 ```sql
